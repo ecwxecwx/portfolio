@@ -11,3 +11,11 @@ a:active {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
+p {
+    font-family: $body-font;
+    font-size: 16px;
+    background: linear-gradient($primary-dark, $primary-light);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
