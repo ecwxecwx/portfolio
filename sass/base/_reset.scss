@@ -5,3 +5,7 @@
     padding: 0;
     box-sizing: inherit;
 }
+
+html {
+    font-size: calc(calc(10/16*100) * 1%);
+}

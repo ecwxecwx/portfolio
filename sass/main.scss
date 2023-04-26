@@ -1,7 +1,8 @@
+// Putting variables at the top cos it will return undefined if place after typography
+@import "utils/variables";
+
 @import "base/reset";
 @import "base/typography";
-
-@import "utils/variables";
 
 body {
     background-color: $primary-dark;
