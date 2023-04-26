@@ -1,2 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: calc(calc(10/16*100) * 1%); }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  font-family: "Vina Sans", cursive;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff; }
+
 body {
   background-color: #FF522C; }
