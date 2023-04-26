@@ -18,7 +18,13 @@ a:active {
   font-size: 24px;
   background: linear-gradient(#FF522C, #FF7E61);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  letter-spacing: .4px; }
+  a:link.link--light,
+  a:visited.link--light,
+  a:hover.link--light,
+  a:active.link--light {
+    -webkit-text-fill-color: #fff; }
 
 p {
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -28,4 +34,21 @@ p {
   -webkit-background-clip: text; }
 
 body {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 8px 0; }
+
+.nav--light {
   background-color: #EFEFEF; }
+
+.nav--coloured {
+  background-color: #FF522C; }

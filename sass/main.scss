@@ -4,6 +4,8 @@
 @import "base/reset";
 @import "base/typography";
 
-body {
-    background-color: $neutral-1;
-}
+@import "layout/container";
+
+@import "components/nav";
+
+@import "pages/about";
