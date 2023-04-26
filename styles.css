@@ -8,6 +8,12 @@
 
 html {
   font-size: calc(calc(10/16*100) * 1%); }
+  @media (max-width: calc(calc(600/16) * 1em)) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 32.5em) {
+    html {
+      font-size: 50%; } }
 
 a:link,
 a:visited,
@@ -15,7 +21,7 @@ a:hover,
 a:active {
   font-family: "Vina Sans", cursive;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 2.4rem;
   background: linear-gradient(#FF522C, #FF7E61);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -28,10 +34,23 @@ a:active {
 
 p {
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: linear-gradient(#FF522C, #FF7E61);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; }
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: .8rem 0; }
+
+.nav--light {
+  background-color: #EFEFEF; }
+
+.nav--coloured {
+  background-color: #FF522C; }
 
 body {
   background-color: #EFEFEF;
@@ -39,16 +58,3 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh; }
-
-.nav-link {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  padding: 8px 0; }
-
-.nav--light {
-  background-color: #EFEFEF; }
-
-.nav--coloured {
-  background-color: #FF522C; }
