@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Vina+Sans&display=swap');
 
 a:link,
 a:visited,
@@ -7,5 +7,7 @@ a:active {
     font-family: $display-font;
     text-decoration: none;
     font-size: 24px;
-    color: $light;
+    background: linear-gradient($primary-dark, $primary-light);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }

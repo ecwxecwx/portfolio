@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Vina+Sans&display=swap");
 *,
 *::after,
 *::before {
@@ -16,7 +16,9 @@ a:active {
   font-family: "Vina Sans", cursive;
   text-decoration: none;
   font-size: 24px;
-  color: #fff; }
+  background: linear-gradient(#FF522C, #FF7E61);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
 
 body {
-  background-color: #FF522C; }
+  background-color: #EFEFEF; }
