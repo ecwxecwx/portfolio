@@ -10,6 +10,6 @@ html {
     font-size: calc(calc(10/16*100) * 1%); //1rem = 10px
 
     @include respond(phone) {
-        font-size: 50%;
+        font-size: calc(calc(8/16*100) * 1%); //1rem = 8px
     }
 }

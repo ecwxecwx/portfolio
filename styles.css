@@ -10,10 +10,7 @@ html {
   font-size: calc(calc(10/16*100) * 1%); }
   @media (max-width: calc(calc(600/16) * 1em)) {
     html {
-      font-size: 50%; } }
-  @media (max-width: 32.5em) {
-    html {
-      font-size: 50%; } }
+      font-size: calc(calc(8/16*100) * 1%); } }
 
 a:link,
 a:visited,
