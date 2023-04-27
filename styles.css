@@ -19,10 +19,7 @@ html {
       font-size: calc(calc(8/16*100) * 1%); } }
 
 body {
-  background-color: #EFEFEF;
-  display: flex;
-  flex-direction: column;
-  height: 100vh; }
+  background-color: #EFEFEF; }
 
 a:link,
 a:visited,
@@ -71,14 +68,6 @@ p {
 
 .nav-link:hover {
   cursor: pointer; }
-
-.about {
-  display: block; }
-  .about__text {
-    height: 50%; }
-  .about__art-wrapper {
-    height: 50%;
-    background-color: pink; }
 
 .work {
   display: block; }
