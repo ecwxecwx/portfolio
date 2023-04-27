@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Vina+Sans&display=swap");
+.u-bg-light {
+  background-color: #EFEFEF; }
+
+.u-bg-coloured {
+  background-color: #FF522C; }
+
 *,
 *::after,
 *::before {
@@ -50,12 +56,6 @@ p {
   width: 100%;
   padding: .8rem 0; }
 
-.nav--light {
-  background-color: #EFEFEF; }
-
-.nav--coloured {
-  background-color: #FF522C; }
-
 .container {
   height: 100%;
   padding: .8rem 2.4rem 2.4rem; }
@@ -66,3 +66,6 @@ p {
 .about__art-wrapper {
   height: 50%;
   background-color: pink; }
+
+.open {
+  height: 100%; }

@@ -4,7 +4,7 @@
   "description": "easter's portfolio",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss styles.css -w" 
+    "compile:sass": "node-sass sass/main.scss styles.css -w"
   },
   "author": "easter",
   "license": "ISC",
