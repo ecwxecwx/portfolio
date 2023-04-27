@@ -52,16 +52,6 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; }
 
-.nav-link {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  padding: .8rem 0; }
-
-.nav-link:hover {
-  cursor: pointer; }
-
 .accordion__content {
   padding: 0;
   height: 0;
@@ -71,6 +61,16 @@ p {
 .accordion__content:target {
   padding: 2.4rem;
   height: auto; }
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: .8rem 0; }
+
+.nav-link:hover {
+  cursor: pointer; }
 
 .about {
   display: block; }
