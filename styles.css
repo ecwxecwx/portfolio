@@ -69,3 +69,6 @@ p {
 
 .open {
   height: 100%; }
+
+.work p {
+  -webkit-text-fill-color: #fff; }
