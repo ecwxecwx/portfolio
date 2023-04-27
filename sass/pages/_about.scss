@@ -1,2 +1,9 @@
 .about {
-}
+    &__text {
+        height: 50%;
+    };
+    &__art-wrapper {
+        height: 50%;
+        background-color: pink;
+    };
+};

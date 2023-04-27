@@ -12,6 +12,13 @@ html {
     html {
       font-size: calc(calc(8/16*100) * 1%); } }
 
+body {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
+
 a:link,
 a:visited,
 a:hover,
@@ -49,9 +56,13 @@ p {
 .nav--coloured {
   background-color: #FF522C; }
 
-body {
-  background-color: #EFEFEF;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh; }
+.container {
+  height: 100%;
+  padding: .8rem 2.4rem 2.4rem; }
+
+.about__text {
+  height: 50%; }
+
+.about__art-wrapper {
+  height: 50%;
+  background-color: pink; }

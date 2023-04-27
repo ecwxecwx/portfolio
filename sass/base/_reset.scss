@@ -13,3 +13,11 @@ html {
         font-size: calc(calc(8/16*100) * 1%); //1rem = 8px
     }
 }
+
+body {
+    background-color: $neutral-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; 
+}
