@@ -60,15 +60,15 @@ p {
   height: 100%;
   padding: .8rem 2.4rem 2.4rem; }
 
-.about__text {
-  height: 50%; }
+.about {
+  display: block; }
+  .about__text {
+    height: 50%; }
+  .about__art-wrapper {
+    height: 50%;
+    background-color: pink; }
 
-.about__art-wrapper {
-  height: 50%;
-  background-color: pink; }
-
-.open {
-  height: 100%; }
-
-.work p {
-  -webkit-text-fill-color: #fff; }
+.work {
+  display: none; }
+  .work p {
+    -webkit-text-fill-color: #fff; }
