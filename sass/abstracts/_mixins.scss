@@ -1,0 +1,18 @@
+// MEDIA QUERY MANAGER
+
+// 0 - 600px: Phone
+// 600 - 900px: Tablet Portrait
+// 900 - 1200px: Tablet Landscape
+// 1200 - 1800px: Desktop
+// 1800px++: Wide
+
+// Accepted $breakpoints:
+// phone
+// tablet
+// desktop
+
+@mixin respond($breakpoint) {
+    @if ($breakpoint == phone) { 
+        @media (max-width: calc(calc(600/16) * 1em)) { @content }; // 32.5em, 600px
+     };
+}
