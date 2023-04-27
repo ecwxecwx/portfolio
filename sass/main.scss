@@ -1,6 +1,7 @@
 // Putting variables at the top cos it will return undefined if place after typography
-@import "utils/variables";
-@import "utils/mixins";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/utils";
 
 @import "base/reset";
 @import "base/typography";
