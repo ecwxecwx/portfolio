@@ -22,7 +22,6 @@ body {
   background-color: #EFEFEF;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh; }
 
 a:link,
@@ -35,7 +34,11 @@ a:active {
   background: linear-gradient(#FF522C, #FF7E61);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  letter-spacing: .4px; }
+  letter-spacing: .4px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
   a:link.link--light,
   a:visited.link--light,
   a:hover.link--light,
@@ -56,9 +59,18 @@ p {
   width: 100%;
   padding: .8rem 0; }
 
-.container {
-  height: 100%;
-  padding: .8rem 2.4rem 2.4rem; }
+.nav-link:hover {
+  cursor: pointer; }
+
+.accordion__content {
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease; }
+
+.accordion__content:target {
+  padding: 2.4rem;
+  height: auto; }
 
 .about {
   display: block; }
@@ -69,6 +81,6 @@ p {
     background-color: pink; }
 
 .work {
-  display: none; }
+  display: block; }
   .work p {
     -webkit-text-fill-color: #fff; }

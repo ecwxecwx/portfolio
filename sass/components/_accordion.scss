@@ -1,0 +1,15 @@
+.accordion {
+    &__content {
+        // Animating from
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+
+    &__content:target {
+        // Animating to
+        padding: 2.4rem;
+        height: auto;
+    }
+}
