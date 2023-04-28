@@ -19,7 +19,10 @@ html {
       font-size: calc(calc(8/16*100) * 1%); } }
 
 body {
-  background-color: #EFEFEF; }
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
 
 a:link,
 a:visited,
@@ -49,15 +52,22 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; }
 
+.accordion__list {
+  flex-grow: 0; }
+
 .accordion__content {
   padding: 0;
   height: 0;
   overflow: hidden;
   transition: all 1s ease; }
 
+.accordion__list:target {
+  flex-grow: 1; }
+
 .accordion__content:target {
   padding: 2.4rem;
-  height: auto; }
+  height: auto;
+  flex-grow: 1; }
 
 .nav-link {
   display: flex;
@@ -69,7 +79,18 @@ p {
 .nav-link:hover {
   cursor: pointer; }
 
-.work {
+.accordion {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  flex-grow: 1; }
+  .accordion__list {
+    display: flex;
+    flex-flow: column nowrap; }
+    .accordion__list .accordion__content#about {
+      background-color: purple; }
+
+#work {
   display: block; }
-  .work p {
+  #work p {
     -webkit-text-fill-color: #fff; }

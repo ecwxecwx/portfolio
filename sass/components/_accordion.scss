@@ -1,0 +1,33 @@
+.accordion {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    flex-grow: 1;
+    // background: $dark;
+
+    &__list {
+        display: flex;
+        flex-flow: column nowrap;
+        // background-color: greenyellow;
+        // flex-grow: 1;
+
+        // The flex grow works, so maybe we add logic?
+        // If the content height is 0,
+        // flex-grow of that list is 0?
+        // And then delete the :target animation
+
+
+        .accordion__content {
+            // display: flex;
+
+            &#about {
+                background-color: purple;
+                // flex-grow: 1;
+            }
+        }
+    }
+
+    // &__list {
+    //     flex-grow: 1;
+    // }
+}
