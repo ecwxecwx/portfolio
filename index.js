@@ -22,6 +22,8 @@ for (let i = 0; i < navLinks.length; i++) {
         
         // Apply flex-grow 0 to that unselected navlink's parent
         unselectedNavLink.parentElement.style.flexGrow = "0";
+
+        console.log('this :>> ', this);
     })
 }
 

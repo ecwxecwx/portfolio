@@ -11,12 +11,6 @@
         // background-color: greenyellow;
         // flex-grow: 1;
 
-        // The flex grow works, so maybe we add logic?
-        // If the content height is 0,
-        // flex-grow of that list is 0?
-        // And then delete the :target animation
-
-
         .accordion__content {
             // display: flex;
 
@@ -26,8 +20,4 @@
             }
         }
     }
-
-    // &__list {
-    //     flex-grow: 1;
-    // }
 }

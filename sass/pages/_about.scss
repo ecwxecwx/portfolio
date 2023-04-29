@@ -1,11 +1,4 @@
-// .about {
-//     display: block;
-
-//     &__text {
-//         height: 50%;
-//     };
-//     &__art-wrapper {
-//         height: 50%;
-//         background-color: pink;
-//     };
-// };
+// Showing "About" content as full height
+.accordion__list:first-child {
+    flex-grow: 1;
+}

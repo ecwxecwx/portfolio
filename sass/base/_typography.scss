@@ -12,7 +12,10 @@ a:active {
     -webkit-background-clip: text;
     letter-spacing: .4px;
     display: block;
-    width: 100%;
+    padding: .8rem 0;
+
+    box-sizing: border-box;
+    width: 100%; // To make the touch target same as container
     height: 100%;
     text-align: center;
 

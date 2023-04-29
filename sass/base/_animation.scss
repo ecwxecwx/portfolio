@@ -1,23 +1,11 @@
-// Accordion 
-
-// Animating from
-// Not sure why flex grow is not working on list targated
-.accordion__list {
-    flex-grow: 0;
-}
+// Accordion
 
 .accordion__content {
     padding: 0;
     height: 0;
     overflow: hidden;
-    transition: all 1s ease;
+    transition: height 1s ease;
     // flex-grow: 0;
-}
-
-// Animation to
-// Not sure why flex grow is not working on list targated
-.accordion__list:target {
-    flex-grow: 1;
 }
 
 .accordion__content:target {
@@ -26,9 +14,15 @@
     flex-grow: 1;
 }
 
+// Issue:
+// Clicking on padding on nav-a-tags doesnt change the url
+// but affects the js
+// Solution one: the A link height must cover padding
+
 // Structure
 // body (flex)
 //  accordion (flex)
 //      accordion__list (flex + flex grow)
 //          nav-link
 //          accordion__content (flex + flex grow)
+

@@ -36,6 +36,8 @@ a:active {
   -webkit-background-clip: text;
   letter-spacing: .4px;
   display: block;
+  padding: .8rem 0;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   text-align: center; }
@@ -52,17 +54,11 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; }
 
-.accordion__list {
-  flex-grow: 0; }
-
 .accordion__content {
   padding: 0;
   height: 0;
   overflow: hidden;
-  transition: all 1s ease; }
-
-.accordion__list:target {
-  flex-grow: 1; }
+  transition: height 1s ease; }
 
 .accordion__content:target {
   padding: 2.4rem;
@@ -73,8 +69,7 @@ p {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 100%;
-  padding: .8rem 0; }
+  width: 100%; }
 
 .nav-link:hover {
   cursor: pointer; }
@@ -89,6 +84,9 @@ p {
     flex-flow: column nowrap; }
     .accordion__list .accordion__content#about {
       background-color: purple; }
+
+.accordion__list:first-child {
+  flex-grow: 1; }
 
 #work {
   display: block; }
