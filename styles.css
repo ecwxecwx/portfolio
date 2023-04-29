@@ -57,13 +57,20 @@ p {
 .accordion__content {
   padding: 0;
   height: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: height 1s ease; }
+  transition: max-height 1s ease-out; }
+  .accordion__content p {
+    opacity: 0;
+    transition: opacity 1s ease-out; }
 
 .accordion__content:target {
   padding: 2.4rem;
-  height: auto;
+  max-height: 99rem;
   flex-grow: 1; }
+
+.accordion__content:target p {
+  opacity: 1; }
 
 .nav-link {
   display: flex;

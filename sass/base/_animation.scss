@@ -1,23 +1,31 @@
 // Accordion
 
+// Before state
 .accordion__content {
     padding: 0;
     height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 1s ease;
-    // flex-grow: 0;
+    transition: max-height 1s ease-out;
+    // opacity: 0;
+
+    p {
+        opacity: 0;
+        transition: opacity 1s ease-out;
+    }
 }
 
+// After state
 .accordion__content:target {
     padding: 2.4rem;
-    height: auto;
+    max-height: 99rem;
     flex-grow: 1;
+    // opacity: 1;
 }
 
-// Issue:
-// Clicking on padding on nav-a-tags doesnt change the url
-// but affects the js
-// Solution one: the A link height must cover padding
+.accordion__content:target p {
+    opacity: 1;
+}
 
 // Structure
 // body (flex)
