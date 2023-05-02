@@ -8,16 +8,5 @@
     &__list {
         display: flex;
         flex-flow: column nowrap;
-        // background-color: greenyellow;
-        // flex-grow: 1;
-
-        .accordion__content {
-            // display: flex;
-
-            &#about {
-                background-color: purple;
-                // flex-grow: 1;
-            }
-        }
     }
 }

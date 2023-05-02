@@ -2,3 +2,29 @@
 .accordion__list:first-child {
     flex-grow: 1;
 }
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .about__text-wrapper {
+        display: flex;
+        padding: 0 3.2rem;
+        height: 50%;
+
+        p:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
+
+    .about__art-wrapper {
+        height: 50%;
+
+        .about__art {
+            width: 100%;
+            object-fit: contain;
+        }
+        
+    }
+}
