@@ -9,7 +9,7 @@
     transition: max-height 1s ease-out;
     // opacity: 0;
 
-    p {
+    * {
         opacity: 0;
         transition: opacity 1s ease-out;
     }
@@ -23,7 +23,7 @@
     // opacity: 1;
 }
 
-.accordion__content:target p {
+.accordion__content:target * {
     opacity: 1;
 }
 

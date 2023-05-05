@@ -13,17 +13,21 @@
         padding: 0 3.2rem;
         height: 50%;
 
+        & > * {
+            flex: 1;
+        }
+
         p:not(:last-child) {
             margin-right: 1.6rem;
         }
     }
 
     .about__art-wrapper {
-        height: 50%;
 
         .about__art {
             width: 100%;
             object-fit: contain;
+            height: auto;
         }
         
     }
