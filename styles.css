@@ -78,6 +78,25 @@ p {
   transition: delay 3s;
   transition-property: opacity; }
 
+.project-link:link {
+  background: transparent;
+  transition: all .3s ease-out; }
+
+.project-link:visited,
+.project-link:hover,
+.project-link:active {
+  background: #fff; }
+
+.project-link p {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+.project-link:hover p {
+  background: linear-gradient(#FF522C, #FF7E61);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
 .nav-link {
   display: flex;
   justify-content: center;
@@ -125,7 +144,6 @@ p {
     padding: 0 2.4rem 2.4rem; }
     #work .project-link-wrapper a.project-link {
       height: auto;
-      background: #fff;
       flex-grow: 1;
       padding: 0;
       position: relative;
@@ -139,7 +157,6 @@ p {
       #work .project-link-wrapper a.project-link:last-child {
         border-radius: 0 999em 999em 999em; }
       #work .project-link-wrapper a.project-link p {
-        -webkit-text-fill-color: #FF522C;
         position: absolute;
         top: 50%;
         left: 50%;

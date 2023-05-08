@@ -28,11 +28,42 @@
     opacity: 1;
 }
 
-// Delaying #About img
+// Delaying #about img
 .accordion__content:target .about__art-wrapper {
     transition: delay 3s;
     transition-property: opacity;
 }
+
+
+// --- Hover states ---
+
+// Project links
+
+// Changing bg color
+.project-link:link {
+    background: transparent;
+    transition: all .3s ease-out;
+}
+
+.project-link:visited,
+.project-link:hover,
+.project-link:active {
+    background: $light;
+}
+
+// Changing text color
+.project-link p {
+    background: rgba(255, 255, 255, .8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.project-link:hover p {
+    background: linear-gradient($primary-dark, $primary-light);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 
 // Structure
 // body (flex)
