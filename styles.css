@@ -61,18 +61,22 @@ p {
   padding: 0;
   height: 0;
   max-height: 0;
+  flex-grow: 1;
   overflow: hidden;
-  transition: max-height 1s ease-out; }
+  transition: all 1s ease-out; }
   .accordion__content * {
     opacity: 0;
     transition: opacity 1s ease-out; }
 
 .accordion__content:target {
-  max-height: 99rem;
-  flex-grow: 1; }
+  max-height: 99rem; }
 
 .accordion__content:target * {
   opacity: 1; }
+
+.accordion__content:target .about__art-wrapper {
+  transition: delay 3s;
+  transition-property: opacity; }
 
 .nav-link {
   display: flex;

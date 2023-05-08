@@ -1,13 +1,15 @@
-// Accordion
+// --- Accordion ---
 
 // Before state
 .accordion__content {
     padding: 0;
     height: 0;
     max-height: 0;
+    flex-grow: 1;
     overflow: hidden;
-    transition: max-height 1s ease-out;
-    // opacity: 0;
+    // transition: max-height 1s ease-out;
+    transition: all 1s ease-out;
+    // transition: opacity 1s ease-out;
 
     * {
         opacity: 0;
@@ -19,12 +21,17 @@
 .accordion__content:target {
     // padding: 2.4rem;
     max-height: 99rem;
-    flex-grow: 1;
     // opacity: 1;
 }
 
 .accordion__content:target * {
     opacity: 1;
+}
+
+// Delaying #About img
+.accordion__content:target .about__art-wrapper {
+    transition: delay 3s;
+    transition-property: opacity;
 }
 
 // Structure
@@ -34,3 +41,10 @@
 //          nav-link
 //          accordion__content (flex + flex grow)
 
+
+
+
+// To-do
+// Add work page animation
+
+// About page mobile responsive
