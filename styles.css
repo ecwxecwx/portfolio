@@ -125,15 +125,17 @@ p {
   #about .about__text-wrapper {
     display: flex;
     padding: 0 3.2rem;
-    height: 50%; }
+    align-items: stretch; }
     #about .about__text-wrapper > * {
       flex: 1; }
     #about .about__text-wrapper p:not(:last-child) {
       margin-right: 1.6rem; }
-  #about .about__art-wrapper .about__art {
-    width: 100%;
-    object-fit: contain;
-    height: auto; }
+  #about .about__art-wrapper {
+    padding: 0 3.2rem 2.4rem; }
+    #about .about__art-wrapper .about__art {
+      width: 100%;
+      object-fit: contain;
+      height: auto; }
 
 #work {
   display: flex; }

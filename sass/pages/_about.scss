@@ -11,7 +11,10 @@
     .about__text-wrapper {
         display: flex;
         padding: 0 3.2rem;
-        height: 50%;
+        // height: 75%;
+        // height: 70vh;
+        // background: grey;
+        align-items: stretch;
 
         & > * {
             flex: 1;
@@ -23,7 +26,7 @@
     }
 
     .about__art-wrapper {
-
+        padding: 0 3.2rem 2.4rem;
         .about__art {
             width: 100%;
             object-fit: contain;
