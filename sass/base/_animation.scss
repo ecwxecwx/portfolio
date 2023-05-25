@@ -35,9 +35,9 @@
 }
 
 
-// --- Hover states ---
+// --- Desktop Hover states ---
 
-// Project links
+// -- Project links --
 
 // Changing bg color
 .project-link:link {
@@ -64,6 +64,22 @@
     -webkit-background-clip: text;
 }
 
+// --- Mobile Default + Press states ---
+
+// -- Project links --
+
+@include respond(mobile) {
+    .project-link:link {
+        background: $light;
+    }
+
+    .project-link p {
+        background: linear-gradient($primary-dark, $primary-light);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
 
 // Structure
 // body (flex)
@@ -73,5 +89,7 @@
 //          accordion__content (flex + flex grow)
 
 // To-do
-// About page mobile responsive
+// mobile default and press states for work
 // project page
+
+// ☑️ About page mobile responsive
