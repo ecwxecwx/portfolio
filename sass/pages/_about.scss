@@ -25,13 +25,75 @@
         }
     }
 
+    // Desktop + Mobile Text
+    .about__text-wrapper {
+
+        // Desktop
+        @include respond(desktop) { // max-width 1800
+            .about__text.mobile {
+                display: none;
+            }
+
+            .about__text.desktop {
+                display: block;
+            }
+        }
+
+        // Mobile
+        @include respond(mobile) { // max-width 600
+            .about__text.mobile {
+                display: block;
+                // height: 50vh;
+                margin: 0;
+            }
+
+            .about__text.desktop {
+                display: none;
+            }
+        }
+    }
+
+    
+    // Desktop + Mobile Img
     .about__art-wrapper {
         padding: 0 3.2rem 2.4rem;
-        .about__art {
-            width: 100%;
-            object-fit: contain;
-            height: auto;
+
+    //     // Desktop
+    //     @include respond(desktop) { //max-width 1800px
+    //         .about__art.mobile {
+    //             display: none;
+    //         }
+
+            .about__art.desktop {
+                width: 100%;
+                object-fit: contain;
+                height: auto;
+            }
         }
-        
+
+    //     // Mobile
+    //     @include respond(mobile) { //max-width 600px
+    //         .about__art.mobile {
+    //             display: block;
+    //             width: 100%;
+    //             object-fit: contain;
+    //             height: auto;
+    //         }
+
+    //         .about__art.desktop {
+    //             display: none;
+    //         }
+    //     }
+    // }
+
+
+    // Mobile wrapper padding
+    @include respond(mobile) {
+        .about__text-wrapper {
+            padding: 0 1.6rem;
+        }
+        .about__art-wrapper {
+            padding: 0 1.6rem 1.6rem;
+        }
     }
 }

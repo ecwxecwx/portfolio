@@ -1,18 +1,27 @@
 // MEDIA QUERY MANAGER
 
-// 0 - 600px: Phone
+// 0 - 600px: Mobile
 // 600 - 900px: Tablet Portrait
 // 900 - 1200px: Tablet Landscape
 // 1200 - 1800px: Desktop
 // 1800px++: Wide
 
 // Accepted $breakpoints:
-// phone
+// mobile
 // tablet
 // desktop
 
 @mixin respond($breakpoint) {
-    @if ($breakpoint == phone) { 
+    @if ($breakpoint == mobile) { 
         @media (max-width: calc(calc(600/16) * 1em)) { @content }; // 32.5em, 600px
-     };
-}
+    };
+
+    @if ($breakpoint == desktop) {
+        @media (max-width: calc(calc(1800/16) * 1em)) { @content };
+    }
+
+    @if ($breakpoint == wide) {
+        @media (min-width: calc(calc(1800/16) * 1em)) { @content };
+    }
+};
+
