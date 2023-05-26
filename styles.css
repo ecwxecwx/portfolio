@@ -75,28 +75,34 @@ p {
   transition: delay 3s;
   transition-property: opacity; }
 
-.project-link:link {
-  background: transparent;
-  transition: all .3s ease-out; }
-
+.project-link:link,
 .project-link:visited,
 .project-link:hover,
 .project-link:active {
-  background: #fff; }
+  background: #fff;
+  transition: all .3s ease-out; }
 
 .project-link p {
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; }
-
-.project-link:hover p {
   background: linear-gradient(#FF522C, #FF7E61);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; }
 
+@keyframes firstRoundRadius {
+  0% {
+    border-radius: 50% 999em 999em 0; }
+  25% {
+    border-radius: 0 999em 999em 999em; }
+  50% {
+    border-radius: 999em 0 999em 999em; }
+  75% {
+    border-radius: 999em 999em 0 999em; }
+  100% {
+    border-radius: 999em 999em 999em 0; } }
+
+.project-link:first-child:hover {
+  animation: firstRoundRadius 5s ease infinite; }
+
 @media (max-width: calc(calc(600/16) * 1em)) {
-  .project-link:link {
-    background: #fff; }
   .project-link p {
     background: linear-gradient(#FF522C, #FF7E61);
     -webkit-text-fill-color: transparent;

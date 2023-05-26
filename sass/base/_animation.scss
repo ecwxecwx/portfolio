@@ -40,28 +40,31 @@
 // -- Project links --
 
 // Changing bg color
-.project-link:link {
-    background: transparent;
-    transition: all .3s ease-out;
-}
-
+.project-link:link,
 .project-link:visited,
 .project-link:hover,
 .project-link:active {
     background: $light;
+    transition: all .3s ease-out;
+    // border: .1rem dashed pink;
 }
 
-// Changing text color
 .project-link p {
-    background: rgba(255, 255, 255, .8);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.project-link:hover p {
     background: linear-gradient($primary-dark, $primary-light);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+@keyframes firstRoundRadius {
+    0% { border-radius: 50% 999em 999em 0; }
+    25% { border-radius: 0 999em 999em 999em; }
+    50% { border-radius: 999em 0 999em 999em; }
+    75% { border-radius: 999em 999em 0 999em; }
+    100% { border-radius: 999em 999em 999em 0; }
+}
+
+.project-link:first-child:hover {
+    animation: firstRoundRadius 5s ease infinite;
 }
 
 // --- Mobile Default + Press states ---
@@ -69,9 +72,9 @@
 // -- Project links --
 
 @include respond(mobile) {
-    .project-link:link {
-        background: $light;
-    }
+    // .project-link:link {
+    //     background: $light;
+    // }
 
     .project-link p {
         background: linear-gradient($primary-dark, $primary-light);
@@ -89,6 +92,9 @@
 //          accordion__content (flex + flex grow)
 
 // To-do
+// Change desktop default n hover states: 
+// Default: white fill
+// Hover: outline stroke
 // mobile default and press states for work
 // project page
 
