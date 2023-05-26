@@ -41,11 +41,10 @@
 
 // Changing bg color
 .project-link:link,
-.project-link:visited,
-.project-link:hover,
-.project-link:active {
+.project-link:visited {
     background: $light;
     transition: background .3s ease-out;
+    border: .2rem dashed transparent;
 }
 
 .project-link p {
@@ -54,11 +53,14 @@
     -webkit-background-clip: text;
 }
 
-.project-link:hover {
+.project-link:hover,
+.project-link:focus,
+.project-link:active {
     background: transparent;
     border: .2rem dashed $light;
 }
 
+.project-link:focus p,
 .project-link:hover p {
     -webkit-text-fill-color: $light;
 }
@@ -67,17 +69,7 @@
 
 // -- Project links --
 
-@include respond(mobile) {
-    // .project-link:link {
-    //     background: $light;
-    // }
 
-    .project-link p {
-        background: linear-gradient($primary-dark, $primary-light);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-}
 
 
 // Structure

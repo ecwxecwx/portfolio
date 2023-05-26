@@ -76,29 +76,25 @@ p {
   transition-property: opacity; }
 
 .project-link:link,
-.project-link:visited,
-.project-link:hover,
-.project-link:active {
+.project-link:visited {
   background: #fff;
-  transition: background .3s ease-out; }
+  transition: background .3s ease-out;
+  border: .2rem dashed transparent; }
 
 .project-link p {
   background: linear-gradient(#FF522C, #FF7E61);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; }
 
-.project-link:hover {
+.project-link:hover,
+.project-link:focus,
+.project-link:active {
   background: transparent;
   border: 0.2rem dashed #fff; }
 
+.project-link:focus p,
 .project-link:hover p {
   -webkit-text-fill-color: #fff; }
-
-@media (max-width: calc(calc(600/16) * 1em)) {
-  .project-link p {
-    background: linear-gradient(#FF522C, #FF7E61);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; } }
 
 .nav-link {
   display: flex;
