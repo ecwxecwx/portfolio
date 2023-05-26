@@ -45,8 +45,7 @@
 .project-link:hover,
 .project-link:active {
     background: $light;
-    transition: all .3s ease-out;
-    // border: .1rem dashed pink;
+    transition: background .3s ease-out;
 }
 
 .project-link p {
@@ -55,16 +54,13 @@
     -webkit-background-clip: text;
 }
 
-@keyframes firstRoundRadius {
-    0% { border-radius: 50% 999em 999em 0; }
-    25% { border-radius: 0 999em 999em 999em; }
-    50% { border-radius: 999em 0 999em 999em; }
-    75% { border-radius: 999em 999em 0 999em; }
-    100% { border-radius: 999em 999em 999em 0; }
+.project-link:hover {
+    background: transparent;
+    border: .2rem dashed $light;
 }
 
-.project-link:first-child:hover {
-    animation: firstRoundRadius 5s ease infinite;
+.project-link:hover p {
+    -webkit-text-fill-color: $light;
 }
 
 // --- Mobile Default + Press states ---
