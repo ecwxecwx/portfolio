@@ -58,7 +58,7 @@ p {
   padding: 0;
   height: 0;
   max-height: 0;
-  flex-grow: 1;
+  flex-grow: 0;
   overflow: hidden;
   transition: all 1s ease-out; }
   .accordion__content * {
@@ -66,7 +66,9 @@ p {
     transition: opacity 1s ease-out; }
 
 .accordion__content:target {
-  max-height: 99rem; }
+  max-height: 99rem;
+  height: calc(100vh - var(--twoAccordionLinkHeight));
+  flex-grow: 1; }
 
 .accordion__content:target * {
   opacity: 1; }
@@ -93,7 +95,8 @@ p {
   border: 0.2rem dashed #fff; }
 
 .project-link:focus p,
-.project-link:hover p {
+.project-link:hover p,
+.project-link:active p {
   -webkit-text-fill-color: #fff; }
 
 .nav-link {
@@ -108,14 +111,10 @@ p {
 .accordion {
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
-  flex-grow: 1; }
+  height: 100vh; }
   .accordion__list {
     display: flex;
     flex-flow: column nowrap; }
-
-.accordion__list:first-child {
-  flex-grow: 1; }
 
 #about {
   display: flex;

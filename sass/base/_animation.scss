@@ -5,11 +5,9 @@
     padding: 0;
     height: 0;
     max-height: 0;
-    flex-grow: 1;
+    flex-grow: 0;
     overflow: hidden;
-    // transition: max-height 1s ease-out;
     transition: all 1s ease-out;
-    // transition: opacity 1s ease-out;
 
     * {
         opacity: 0;
@@ -19,9 +17,9 @@
 
 // After state
 .accordion__content:target {
-    // padding: 2.4rem;
     max-height: 99rem;
-    // opacity: 1;
+    height: calc(100vh - var(--twoAccordionLinkHeight));
+    flex-grow: 1;
 }
 
 .accordion__content:target * {
@@ -33,6 +31,7 @@
     transition: delay 3s;
     transition-property: opacity;
 }
+
 
 
 // --- Desktop Hover states ---
@@ -61,7 +60,8 @@
 }
 
 .project-link:focus p,
-.project-link:hover p {
+.project-link:hover p,
+.project-link:active p {
     -webkit-text-fill-color: $light;
 }
 
@@ -80,10 +80,8 @@
 //          accordion__content (flex + flex grow)
 
 // To-do
-// Change desktop default n hover states: 
-// Default: white fill
-// Hover: outline stroke
-// mobile default and press states for work
 // project page
 
+// ☑️ Change desktop default n hover states
+// ☑️ Mobile default and press states for work
 // ☑️ About page mobile responsive

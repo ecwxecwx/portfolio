@@ -1,37 +1,39 @@
-var navLinks = document.querySelectorAll(".nav-link"),
+var accordionLink = document.querySelector(".accordion-link"),
+    r = document.documentElement,
+    accordionLinkHeight = accordionLink.clientHeight,
+    accordionLinksHeight = 2 * accordionLinkHeight;
+
+r.style.setProperty("--twoAccordionLinkHeight", accordionLinksHeight + "px");
+
+console.log(accordionLinkHeight);
+console.log(accordionLinksHeight);
+
+// var navLinks = document.querySelectorAll(".nav-link"),
     
-    aboutContent = document.getElementById("about-content"),
-    workContent = document.getElementById("work-content");
+//     aboutContent = document.getElementById("about-content"),
+//     workContent = document.getElementById("work-content");
 
-// Add click listener to each navlink
-for (let i = 0; i < navLinks.length; i++) {
-    // For the navlink that is clicked,
-    navLinks[i].addEventListener("click", function() {
-        // Add flex-grow to the parent of clicked nav link
-        this.parentElement.style.flexGrow = "1";
+// // Add click listener to each navlink
+// for (let i = 0; i < navLinks.length; i++) {
+//     // For the navlink that is clicked,
+//     navLinks[i].addEventListener("click", function() {
+//         // Add flex-grow to the parent of clicked nav link
+//         this.parentElement.style.flexGrow = "1";
 
-        // Converting navLink nodeList to array
-        let navLinkList = Array.from(navLinks);
-        // console.log(navLinkList);
+//         // Converting navLink nodeList to array
+//         let navLinkList = Array.from(navLinks);
+//         // console.log(navLinkList);
 
-        // Removing selected(i) from linkList,
-        // what's left is the unselected link in navLinkList
-        navLinkList.splice(i, 1);
+//         // Removing selected(i) from linkList,
+//         // what's left is the unselected link in navLinkList
+//         navLinkList.splice(i, 1);
 
-        let unselectedNavLink = navLinkList[0];
+//         let unselectedNavLink = navLinkList[0];
         
-        // Apply flex-grow 0 to that unselected navlink's parent
-        unselectedNavLink.parentElement.style.flexGrow = "0";
-    })
-}
-
-
-
-
-
-
-
-
+//         // Apply flex-grow 0 to that unselected navlink's parent
+//         unselectedNavLink.parentElement.style.flexGrow = "0";
+//     })
+// }
 
 
 // aboutNavLink.addEventListener("click", function() {
