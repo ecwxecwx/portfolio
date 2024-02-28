@@ -1,7 +1,4 @@
 // Showing "About" content as full height
-// .accordion__list:first-child {
-//     flex-grow: 1;
-// }
 
 #about {
     display: flex;
@@ -11,9 +8,6 @@
     .about__text-wrapper {
         display: flex;
         padding: 0 3.2rem;
-        // height: 75%;
-        // height: 70vh;
-        // background: grey;
         align-items: stretch;
 
         & > * {

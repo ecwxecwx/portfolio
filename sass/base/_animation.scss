@@ -17,7 +17,7 @@
 
 // After state
 .accordion__content:target {
-    max-height: 99rem;
+    max-height: 999rem;
     height: calc(100vh - var(--twoAccordionLinkHeight));
     flex-grow: 1;
 }
