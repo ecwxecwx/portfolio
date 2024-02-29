@@ -8,11 +8,6 @@
     &__list {
         display: flex;
         flex-flow: column nowrap;
-
-        .accordion-link {
-            // background-color: aqua;
-            // overflow: hidden;
-            // height: 6.4rem;
-        }
+        overflow: auto;
     }
 }
