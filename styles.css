@@ -47,12 +47,19 @@ a:active {
   a:active.link--light {
     -webkit-text-fill-color: #fff; }
 
+@media (max-width: calc(calc(1800/16) * 1em)) {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    font-size: 9.6rem; } }
+
 @media (max-width: calc(calc(1200/16) * 1em)) {
   a:link,
   a:visited,
   a:hover,
   a:active {
-    font-size: 8.8rem; } }
+    font-size: 7.2rem; } }
 
 @media (max-width: calc(calc(600/16) * 1em)) {
   a:link,

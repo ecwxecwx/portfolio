@@ -24,16 +24,26 @@ a:active {
 
     &.link--light {
         -webkit-text-fill-color: $light;
+        // overflow: ;
     }
 }
 
 // Nav link responsive sizing
+@include respond(desktop) {
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        font-size: 9.6rem;
+    }
+}
+
 @include respond(tabletLandscape) {
     a:link,
     a:visited,
     a:hover,
     a:active {
-        font-size: 8.8rem;
+        font-size: 7.2rem;
     }
 }
 
