@@ -3,10 +3,11 @@ var accordionLink = document.querySelector(".accordion-link"),
     accordionLinkHeight = accordionLink.clientHeight,
     accordionLinksHeight = 2 * accordionLinkHeight;
 
+// For accordion content to take up browser height
 r.style.setProperty("--twoAccordionLinkHeight", accordionLinksHeight + "px");
 
-console.log(accordionLinkHeight);
-console.log(accordionLinksHeight);
+// console.log(accordionLinkHeight);
+// console.log(accordionLinksHeight);
 
 // var navLinks = document.querySelectorAll(".nav-link"),
     
