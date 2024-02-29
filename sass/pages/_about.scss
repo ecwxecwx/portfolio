@@ -19,11 +19,11 @@
         }
     }
 
-    // Desktop + Mobile Text
+    // Responsive text layout
     .about__text-wrapper {
 
-        // Desktop
-        @include respond(desktop) { // max-width 1800
+        // Wide (1800+) + Desktop (max 180)
+        @include respond(wide, desktop) {
             .about__text.mobile {
                 display: none;
             }
@@ -32,9 +32,9 @@
                 display: block;
             }
         }
-
-        // Mobile
-        @include respond(mobile) { // max-width 600
+        
+        // Tablet Landscape + Below
+        @include respond(tabletLandscape) { // max-width 1200
             .about__text.mobile {
                 display: block;
                 // height: 50vh;

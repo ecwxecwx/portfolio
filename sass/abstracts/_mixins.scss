@@ -11,17 +11,29 @@
 // tablet
 // desktop
 
-@mixin respond($breakpoint) {
-    @if ($breakpoint == mobile) { 
-        @media (max-width: calc(calc(600/16) * 1em)) { @content }; // 32.5em, 600px
-    };
 
-    @if ($breakpoint == desktop) {
-        @media (max-width: calc(calc(1800/16) * 1em)) { @content };
+@mixin respond($breakpoints...) {
+    @each $breakpoint in $breakpoints {
+        @if ($breakpoint == mobile) { 
+            @media (max-width: calc(calc(600/16) * 1em)) { @content }; // 32.5em, 600px
+        }
+    
+        @if ($breakpoint == tabletPortrait) { 
+            @media (max-width: calc(calc(900/16) * 1em)) { @content }; // 32.5em, 600px
+        };
+    
+        @if ($breakpoint == tabletLandscape) { 
+            @media (max-width: calc(calc(1200/16) * 1em)) { @content }; // 32.5em, 600px
+        };
+    
+        @if ($breakpoint == desktop) {
+            @media (max-width: calc(calc(1800/16) * 1em)) { @content };
+        }
+    
+        @if ($breakpoint == wide) {
+            @media (min-width: calc(calc(1800/16) * 1em)) { @content };
+        }
     }
-
-    @if ($breakpoint == wide) {
-        @media (min-width: calc(calc(1800/16) * 1em)) { @content };
-    }
+    
 };
 

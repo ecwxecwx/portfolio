@@ -129,12 +129,17 @@ p {
       flex: 1; }
     #about .about__text-wrapper p:not(:last-child) {
       margin-right: 1.6rem; }
+  @media (min-width: calc(calc(1800/16) * 1em)) {
+    #about .about__text-wrapper .about__text.mobile {
+      display: none; }
+    #about .about__text-wrapper .about__text.desktop {
+      display: block; } }
   @media (max-width: calc(calc(1800/16) * 1em)) {
     #about .about__text-wrapper .about__text.mobile {
       display: none; }
     #about .about__text-wrapper .about__text.desktop {
       display: block; } }
-  @media (max-width: calc(calc(600/16) * 1em)) {
+  @media (max-width: calc(calc(1200/16) * 1em)) {
     #about .about__text-wrapper .about__text.mobile {
       display: block;
       margin: 0; }
